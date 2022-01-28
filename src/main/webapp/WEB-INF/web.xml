@@ -21,6 +21,8 @@
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
   version="3.1"
   metadata-complete="false">
+  
+  <!-- 프론트컨트롤러 역할을 하기 위한 서블릿 클래스  --> 
   <servlet>
   	<servlet-name>dispatcher</servlet-name>
   	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
