@@ -12,6 +12,13 @@
         <!-- collaborators and configuration for this bean go here -->
     </bean>
     
+    <bean id="/notice/list" class="com.lksfly.pi.web.notice.ListController">    
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+    <bean id="/notice/detail" class="com.lksfly.pi.web.notice.DetailController">    
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+    
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     	<property name="prefix" value="/WEB-INF/views/"></property>
     	<property name="suffix" value=".jsp"></property>
