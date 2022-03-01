@@ -11,7 +11,7 @@ public class ListController implements Controller {
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		System.out.println("List========");
-		ModelAndView mv = new ModelAndView("notice/list");
+		ModelAndView mv = new ModelAndView("notice.list"); // -> tiles
 		//mv.setViewName("/WEB-INF/views/index.jsp");				
 		return mv;
 	}
