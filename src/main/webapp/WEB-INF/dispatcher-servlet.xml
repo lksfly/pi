@@ -8,14 +8,13 @@
         https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 
-    <bean id="/index" class="com.lksfly.pi.web.IndexController">    
-        <!-- collaborators and configuration for this bean go here -->
+    <bean id="/index" class="com.lksfly.pi.web.controller.IndexController">
     </bean>
     
-    <bean id="/notice/list" class="com.lksfly.pi.web.notice.ListController">    
-        <!-- collaborators and configuration for this bean go here -->
+    <bean id="/notice/list" class="com.lksfly.pi.web.controller.ListController">   
+    	<property name="noticeService" ref="noticeService" /> 
     </bean>
-    <bean id="/notice/detail" class="com.lksfly.pi.web.notice.DetailController">    
+    <bean id="/notice/detail" class="com.lksfly.pi.web.controller.DetailController">    
         <!-- collaborators and configuration for this bean go here -->
     </bean>
 	
@@ -40,4 +39,6 @@
 		class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
 		<property name="definitions" value="/WEB-INF/tiles.xml" />
 	</bean>
+	
+	<bean id="noticeService" class="com.lksfly.pi.web.service.NoticeService" />
 </beans>
