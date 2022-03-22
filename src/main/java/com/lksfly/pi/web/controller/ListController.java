@@ -10,6 +10,7 @@ import org.springframework.web.servlet.mvc.Controller;
 
 import com.lksfly.pi.web.entity.Notice;
 import com.lksfly.pi.web.service.NoticeService;
+import com.lksfly.pi.web.service.jdbc.JDBCNoticeService;
 
 public class ListController implements Controller {
 	

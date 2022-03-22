@@ -40,5 +40,5 @@
 		<property name="definitions" value="/WEB-INF/tiles.xml" />
 	</bean>
 	
-	<bean id="noticeService" class="com.lksfly.pi.web.service.NoticeService" />
+	<bean id="noticeService" class="com.lksfly.pi.web.service.jdbc.JDBCNoticeService" />
 </beans>
