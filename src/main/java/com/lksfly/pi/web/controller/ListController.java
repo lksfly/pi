@@ -14,10 +14,7 @@ import com.lksfly.pi.web.service.NoticeService;
 public class ListController implements Controller {
 	
 	private NoticeService noticeService;
-
-	public NoticeService getNoticeService() {
-		return noticeService;
-	}
+	
 
 	public void setNoticeService(NoticeService noticeService) {
 		this.noticeService = noticeService;
@@ -29,7 +26,11 @@ public class ListController implements Controller {
 		ModelAndView mv = new ModelAndView("notice.list"); // -> tiles
 		//mv.setViewName("/WEB-INF/views/index.jsp");
 		List<Notice> list = noticeService.getList(1, "TITLE", "");
-		System.out.println("List========"+list);
+		System.out.println("List========"+list.toString());
+		System.out.println("List========~"+String.valueOf(list));
+		for(Notice item :list) {
+			System.out.println("sdfsdf"+list.size());
+		}
 		mv.addObject("list",list);
 		return mv;
 	}
