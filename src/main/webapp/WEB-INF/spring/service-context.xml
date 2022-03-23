@@ -11,11 +11,12 @@
         https://www.springframework.org/schema/context/spring-context.xsd">
 
 	
-	<context:annotation-config />
+	<!-- <context:annotation-config /> -->
+	<context:component-scan base-package="com.lksfly.pi.web.service"></context:component-scan>
 
-	<bean id="noticeService" class="com.lksfly.pi.web.service.jdbc.JDBCNoticeService" >
-		<!-- <property name="dataSource" ref="dataSource" /> -->
-	</bean>
+	<!-- <bean id="noticeService" class="com.lksfly.pi.web.service.jdbc.JDBCNoticeService" >
+		<property name="dataSource" ref="dataSource" />
+	</bean> -->
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
 		<property name="driverClassName" value="org.mariadb.jdbc.Driver" />
