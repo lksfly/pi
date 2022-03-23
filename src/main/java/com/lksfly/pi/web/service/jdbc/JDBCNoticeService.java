@@ -12,6 +12,8 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.lksfly.pi.web.entity.Notice;
 import com.lksfly.pi.web.service.NoticeService;
 
@@ -21,13 +23,8 @@ public class JDBCNoticeService implements NoticeService{
 //	private String pwd = "gpem7360!";
 //	private String driver = "org.mariadb.jdbc.Driver";
 	
+	@Autowired
 	private DataSource dataSource;
-	
-	
-	
-	public void setDataSource(DataSource dataSource) {
-		this.dataSource = dataSource;
-	}
 
 	public List<Notice> getList(int page, String field, String query) throws ClassNotFoundException, SQLException{
 		
