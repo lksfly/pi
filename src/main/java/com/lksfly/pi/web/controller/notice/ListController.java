@@ -1,4 +1,4 @@
-package com.lksfly.pi.web.controller;
+package com.lksfly.pi.web.controller.notice;
 
 import java.util.List;
 

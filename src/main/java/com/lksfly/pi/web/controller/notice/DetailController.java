@@ -1,4 +1,4 @@
-package com.lksfly.pi.web.controller;
+package com.lksfly.pi.web.controller.notice;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
